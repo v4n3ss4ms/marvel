@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Marvel
 
-## Getting Started
+## Table of contents
 
-First, run the development server:
+- [Marvel](#marvel)
+  - [Requirements](#requirements)
+  * [1 - Create an account](#1---create-an-account)
+  * [2 - Get your Keys](#2---get-your-keys)
+  * [3 - Set your keys](#3---set-your-keys)
+- [Development server](#development-server)
+  - [1 - Install dependencies](#1---install-dependencies)
+  - [2 - Start the application](#2---start-the-application)
+  - [3 - Navigate](#3---navigate)
+- [Build](#build)
+- [Running unit tests](#running-unit-tests)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To use this project, you'll need a Marvel developer account.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1 - Create an account
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Go to [Marvel Developer website](https://developer.marvel.com/)
 
-## Learn More
+### 2 - Get your Keys
 
-To learn more about Next.js, take a look at the following resources:
+Go to [your account information](https://developer.marvel.com/account)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3 - Set your keys
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Copy the `.env.example` and rename it to `.env.local`
+- Fill in the variables with your Marvel account data
 
-## Deploy on Vercel
+## Development server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 1 - Install dependencies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Run `npm install`
+
+### 2 - Start the application
+
+Run `npm run dev` for a dev server.
+
+The application will automatically reload if you change any of the source files.
+
+### 3 - Navigate
+
+`http://localhost:4200/`
+
+## Build
+
+Run `npm run build` to build the project.
+
+The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `npm run test` to execute the unit tests.
+
+`http://localhost:4200/`
