@@ -1,18 +1,19 @@
 import { UseCaseService } from './use-case.service'
 import { Query } from './query'
 import { UseCase } from './use-case'
+import { EmptyMiddleware } from './middlewares/empty.middleware'
+
+class TestUseCase implements Query<number> {
+  async handle(): Promise<number> {
+    return 42
+  }
+}
 
 describe('UseCaseService', () => {
   it('should execute use cases', async () => {
-    class TestUseCase implements Query<number> {
-      async handle(): Promise<number> {
-        return 42
-      }
-    }
+    const useCaseService = new UseCaseService([new EmptyMiddleware()])
 
-    const useCaseService = new UseCaseService([])
-
-    const actual = await useCaseService.execute(TestUseCase)
+    const actual = await useCaseService.execute(new TestUseCase())
 
     expect(actual).toBe(42)
   })
@@ -34,7 +35,7 @@ describe('UseCaseService', () => {
       },
     ])
 
-    await useCaseService.execute(TestUseCase)
+    await useCaseService.execute(new TestUseCase())
 
     expect(called).toBe(true)
   })
