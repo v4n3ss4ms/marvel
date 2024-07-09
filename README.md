@@ -63,6 +63,8 @@ Run `npm run test` to execute the unit tests.
 
 You'll need install browsers before running e2e tests `npx playwright install`
 
+Start the application `npm run dev` and then:
+
 - Run `npm run test:e2e` to execute the e2e tests.
 - Run `npm run test:e2e:ui` to execute the UI testing suite.
 
