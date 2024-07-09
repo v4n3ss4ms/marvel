@@ -13,6 +13,8 @@
   - [3 - Navigate](#3---navigate)
 - [Build](#build)
 - [Running unit tests](#running-unit-tests)
+- [Running e2e tests](#running-e2e-tests)
+- [Production](#production)
 
 ## Requirements
 
@@ -57,4 +59,13 @@ The build artifacts will be stored in the `dist/` directory.
 
 Run `npm run test` to execute the unit tests.
 
-`http://localhost:4200/`
+## Running e2e tests
+
+You'll need install browsers before running e2e tests `npx playwright install`
+
+- Run `npm run test:e2e` to execute the e2e tests.
+- Run `npm run test:e2e:ui` to execute the UI testing suite.
+
+## Production
+
+Visit [the deployed version in Vercel](https://marvel-eight-eta.vercel.app/)
