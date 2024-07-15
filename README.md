@@ -14,7 +14,6 @@
 - [Build](#build)
 - [Running unit tests](#running-unit-tests)
 - [Running e2e tests](#running-e2e-tests)
-- [Production](#production)
 
 ## Requirements
 
@@ -67,7 +66,3 @@ Start the application `npm run dev` and then:
 
 - Run `npm run test:e2e` to execute the e2e tests.
 - Run `npm run test:e2e:ui` to execute the UI testing suite.
-
-## Production
-
-Visit [the deployed version in Vercel](https://marvel-eight-eta.vercel.app/)
